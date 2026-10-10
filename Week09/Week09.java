@@ -22,9 +22,9 @@ public class Week09 {
         double total(){return shippingCharge()+insurance();}
     }
     interface Insurable { double insurance(); }
-    static class StandardParcel extends Parcel { StandardParcel(double w,double v){super(w,v);} double shippingCharge(){return 40+10*weight;} }
-    static class ExpressParcel extends Parcel implements Insurable { ExpressParcel(double w,double v){super(w,v);} double shippingCharge(){return 80+15*weight;} public double insurance(){return declaredValue*0.02;} }
-    static class FragileParcel extends Parcel implements Insurable { FragileParcel(double w,double v){super(w,v);} double shippingCharge(){return 40+10*weight+50;} public double insurance(){return declaredValue*0.02;} }
+    static class StandardParcel extends Parcel { StandardParcel(double w,double v){super(w,v);} double shippingCharge(){return 40+10*weight;} String type(){return "STANDARD";} }
+    static class ExpressParcel extends Parcel implements Insurable { ExpressParcel(double w,double v){super(w,v);} double shippingCharge(){return 80+15*weight;} public double insurance(){return declaredValue*0.02;} String type(){return "EXPRESS";} }
+    static class FragileParcel extends Parcel implements Insurable { FragileParcel(double w,double v){super(w,v);} double shippingCharge(){return 40+10*weight+50;} public double insurance(){return declaredValue*0.02;} String type(){return "FRAGILE";} }
 
     static abstract class Student {
         final String name; static final double TRANSPORT_FEE=12000.0;
