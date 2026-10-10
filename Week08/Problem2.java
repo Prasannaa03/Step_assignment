@@ -1,3 +1,4 @@
+package Week08;
 import java.util.*;
 public class Problem2 {
     interface Vehicle { String type(); double charge(); }
