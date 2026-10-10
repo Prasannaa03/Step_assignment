@@ -34,7 +34,7 @@ public class Week02 {
         for (int i = 3; i < 13; i++) if (!Character.isDigit(code.charAt(i))) return "Invalid: code body must contain 10 digits";
         StringBuilder out = new StringBuilder();
         out.append("[").append(code.substring(0, 3)).append("] YEAR: 20")
-           .append(code.substring(3, 5)).append(" | CATALOG: ").append(code.substring(7));
+           .append(code.substring(3, 7)).append(" | CATALOG: ").append(code.substring(7));
         return out.toString();
     }
 
