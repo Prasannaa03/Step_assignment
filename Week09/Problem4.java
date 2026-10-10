@@ -1,3 +1,4 @@
+package Week09;
 import java.util.*;
 public class Problem4 {
     interface NightService { double nightFare(double fare); }
