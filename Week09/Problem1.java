@@ -1,3 +1,4 @@
+package Week09;
 import java.util.*;
 public class Problem1 {
     static abstract class Ticket { static final double CONVENIENCE_FEE=20;final int count;Ticket(int c){count=c;}abstract String type();abstract double price();double amount(){return count*(price()+CONVENIENCE_FEE);} }
