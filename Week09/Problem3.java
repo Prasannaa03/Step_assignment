@@ -1,3 +1,4 @@
+package Week09;
 import java.util.*;
 public class Problem3 {
     static abstract class Student {final String name;static final double BUS_FEE=12000;Student(String n){name=n;}abstract double baseFee();boolean usesBus(){return false;}double total(){return baseFee()+(usesBus()?BUS_FEE:0);} }
