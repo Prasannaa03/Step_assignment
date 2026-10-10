@@ -1,3 +1,4 @@
+package Week09;
 import java.util.*;
 public class Problem2 {
     interface Insurable { double insurance(); }
