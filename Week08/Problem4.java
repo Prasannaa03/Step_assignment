@@ -1,3 +1,4 @@
+package Week08;
 import java.util.*;
 public class Problem4 {
     interface Employee { String name(); double bonus(); }
