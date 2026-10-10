@@ -1,3 +1,4 @@
+package Week08;
 import java.util.*;
 public class Problem1 {
     interface Bill { String type(); double finalAmount(); }
